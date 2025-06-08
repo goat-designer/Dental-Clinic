@@ -9,7 +9,7 @@
         --color-neon-blue: 84, 101, 255; /* #5465FF */
         --color-cornflower-blue: 120, 139, 255; /* #788BFF */
         --color-raspberry: 216, 30, 91; /* #D81E5B */
-        --color-beige: 248, 248, 221; /* #F8F8DD */
+        --color-tan: 245, 240, 218; /* #F5F0DA - more palatable tan color */
     }
     
     html {
@@ -79,8 +79,16 @@
     background-color: rgb(var(--color-raspberry));
 }
 
-.bg-beige {
-    background-color: rgb(var(--color-beige));
+.bg-tan {
+    background-color: rgb(var(--color-tan));
+}
+
+.bg-tan-gradient {
+    background: linear-gradient(135deg, rgba(var(--color-tan), 0.8), rgba(var(--color-tan), 0.4));
+}
+
+.bg-tan-transparent {
+    background-color: rgba(var(--color-tan), 0.6);
 }
 
 .text-rich-black {
