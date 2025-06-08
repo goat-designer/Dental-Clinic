@@ -1,0 +1,32 @@
+{
+  "name": "dental-clinic",
+  "version": "1.0.0",
+  "description": "A modern, responsive website for a dental clinic",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i src/styles/tailwind.css -o src/styles/output.css",
+    "watch:css": "tailwindcss -i src/styles/tailwind.css -o src/styles/output.css --watch",
+    "dev": "npm run watch:css",
+    "build": "npm run build:css && NODE_ENV=production",
+    "start": "serve ."
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "responsive",
+    "tailwind",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
