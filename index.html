@@ -18,16 +18,16 @@
 </head>
 <body class="font-body text-gray-800 bg-gray-50">
     <!-- Header Section - Sticky Navigation Bar -->
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50" role="banner">
+    <header class="fixed top-0 left-0 right-0 bg-rich-black shadow-md z-50" role="banner">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
                 <a href="#home">
                     <img src="public/assets/logo.png" alt="Dental Clinic Logo" class="h-8 sm:h-10 md:h-12 w-auto" width="150" height="60">
                 </a>
-                <span class="ml-2 md:ml-3 text-xl sm:text-2xl font-semibold text-blue-600 font-heading">Dental Clinic</span>
+                <span class="ml-2 md:ml-3 text-xl sm:text-2xl font-semibold text-white font-heading">Dental Clinic</span>
             </div>
             <div class="hidden md:flex items-center">
-                <a href="tel:+11234567890" class="mr-4 text-blue-600 font-medium hover:text-blue-800">
+                <a href="tel:+11234567890" class="mr-4 text-white font-medium hover:text-cornflower-blue">
                     <span class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -35,13 +35,13 @@
                         (123) 456-7890
                     </span>
                 </a>
-                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Book Now</a>
+                <a href="#contact" class="bg-neon-blue text-white px-4 py-2 rounded-lg hover:bg-cornflower-blue transition duration-300">Book Now</a>
             </div>
             <nav aria-label="Main Navigation" class="hidden md:block">
                 <ul class="flex space-x-6">
-                    <li><a href="#home" class="hover:text-blue-900">Home</a></li>
+                    <li><a href="#home" class="text-white hover:text-cornflower-blue">Home</a></li>
                     <li class="relative group">
-                        <a href="#services" class="hover:text-blue-900 flex items-center">
+                        <a href="#services" class="text-white hover:text-cornflower-blue flex items-center">
                             Services
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -53,12 +53,12 @@
                             <a href="#restorative-dentistry" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Restorative Dentistry</a>
                         </div>
                     </li>
-                    <li><a href="#about" class="hover:text-blue-900">About Us</a></li>
-                    <li><a href="#contact" class="hover:text-blue-900">Contact</a></li>
+                    <li><a href="#about" class="text-white hover:text-cornflower-blue">About Us</a></li>
+                    <li><a href="#contact" class="text-white hover:text-cornflower-blue">Contact</a></li>
                 </ul>
             </nav>
             <!-- Mobile menu button -->
-            <button id="menu-toggle" class="md:hidden text-gray-600 p-2" aria-expanded="false" aria-controls="mobile-menu">
+            <button id="menu-toggle" class="md:hidden text-white p-2" aria-expanded="false" aria-controls="mobile-menu">
                 <span class="sr-only">Open main menu</span>
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -66,26 +66,26 @@
             </button>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md z-10">
+        <div id="mobile-menu" class="hidden md:hidden bg-rich-black shadow-md z-10">
             <ul class="px-4 py-2">
-                <li class="py-2"><a href="#home" class="block hover:text-blue-900">Home</a></li>
+                <li class="py-2"><a href="#home" class="block text-white hover:text-cornflower-blue">Home</a></li>
                 <li class="py-2">
-                    <button class="flex items-center justify-between w-full text-left hover:text-blue-900" id="services-dropdown-btn">
+                    <button class="flex items-center justify-between w-full text-left text-white hover:text-cornflower-blue" id="services-dropdown-btn">
                         Services
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div class="hidden pl-4 pt-2" id="services-dropdown">
-                        <a href="#general-dentistry" class="block py-2 hover:text-blue-900">General Dentistry</a>
-                        <a href="#cosmetic-dentistry" class="block py-2 hover:text-blue-900">Cosmetic Dentistry</a>
-                        <a href="#restorative-dentistry" class="block py-2 hover:text-blue-900">Restorative Dentistry</a>
+                        <a href="#general-dentistry" class="block py-2 text-white hover:text-cornflower-blue">General Dentistry</a>
+                        <a href="#cosmetic-dentistry" class="block py-2 text-white hover:text-cornflower-blue">Cosmetic Dentistry</a>
+                        <a href="#restorative-dentistry" class="block py-2 text-white hover:text-cornflower-blue">Restorative Dentistry</a>
                     </div>
                 </li>
-                <li class="py-2"><a href="#about" class="block hover:text-blue-900">About Us</a></li>
-                <li class="py-2"><a href="#contact" class="block hover:text-blue-900">Contact</a></li>
+                <li class="py-2"><a href="#about" class="block text-white hover:text-cornflower-blue">About Us</a></li>
+                <li class="py-2"><a href="#contact" class="block text-white hover:text-cornflower-blue">Contact</a></li>
                 <li class="py-2 mt-2">
-                    <a href="tel:+11234567890" class="flex items-center text-blue-600">
+                    <a href="tel:+11234567890" class="flex items-center text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
@@ -93,7 +93,7 @@
                     </a>
                 </li>
                 <li class="py-3">
-                    <a href="#contact" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300">Book Now</a>
+                    <a href="#contact" class="block w-full text-center bg-neon-blue text-white px-4 py-2 rounded-lg hover:bg-cornflower-blue transition duration-300">Book Now</a>
                 </li>
             </ul>
         </div>
@@ -102,12 +102,12 @@
     <div class="h-16 sm:h-20"></div>
 
     <!-- Hero Section -->
-    <section id="home" class="py-8 sm:py-12 md:py-16 bg-blue-50" aria-labelledby="hero-heading">
+    <section id="home" class="py-8 sm:py-12 md:py-16 bg-beige" aria-labelledby="hero-heading">
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
             <div>
-                <h1 id="hero-heading" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600 mb-4 break-words font-heading">Transform Your Smile with Trusted Dental Care</h1>
+                <h1 id="hero-heading" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-rich-black mb-4 break-words font-heading">Transform Your Smile with Trusted Dental Care</h1>
                 <p class="text-sm sm:text-base lg:text-lg mb-6">Comprehensive Services for the Whole Family</p>
-                <a href="#contact" class="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg inline-block hover:bg-blue-800 transition duration-300 text-sm sm:text-base">Schedule Your Free Consultation</a>
+                <a href="#contact" class="bg-neon-blue text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg inline-block hover:bg-cornflower-blue transition duration-300 text-sm sm:text-base">Schedule Your Free Consultation</a>
                 
                 <!-- Trust Signals -->
                 <div class="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
@@ -118,13 +118,13 @@
                         <span class="text-2xs sm:text-xs md:text-sm">5-Star Rated</span>
                     </div>
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-blue-600 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-neon-blue mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span class="text-2xs sm:text-xs md:text-sm">ADA Certified</span>
                     </div>
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-green-600 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-raspberry mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span class="text-2xs sm:text-xs md:text-sm">Same Day Appointments</span>
@@ -134,23 +134,18 @@
                 <!-- Patient Testimonial Preview -->
                 <div class="mt-4 sm:mt-6 bg-white p-3 sm:p-4 rounded-lg shadow-sm border border-gray-100">
                     <div class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-blue-600 mr-2 sm:mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-cornflower-blue mr-2 sm:mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                         </svg>
                         <div>
                             <p class="text-2xs sm:text-xs md:text-sm italic">"Dr. Smith and her team provided exceptional care. The procedure was painless and results are amazing!"</p>
-                            <p class="text-2xs sm:text-xs text-blue-600 mt-1 font-semibold">- Sarah Johnson, Patient</p>
+                            <p class="text-2xs sm:text-xs text-neon-blue mt-1 font-semibold">- Sarah Johnson, Patient</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-4 mt-6 md:mt-0">
+            <div class="flex justify-center mt-6 md:mt-0">
                 <img src="public/assets/hero-image.jpg" alt="Dentist treating patient" class="rounded-lg shadow-lg w-full max-w-lg object-cover object-center h-60 md:h-80" loading="lazy" width="600" height="400">
-                
-                <!-- 3D Tooth Model -->
-                <div id="tooth-model-container" class="w-full h-40 md:h-52 rounded-lg shadow-lg bg-blue-50 flex items-center justify-center overflow-hidden">
-                    <!-- Three.js will render the tooth model here -->
-                </div>
             </div>
         </div>
     </section>
@@ -159,7 +154,7 @@
     <section id="services" class="py-12 sm:py-16 md:py-20" aria-labelledby="services-heading">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 sm:mb-12 md:mb-16">
-                <h2 id="services-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 font-heading mb-3 sm:mb-4">Our Dental Services</h2>
+                <h2 id="services-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-rich-black font-heading mb-3 sm:mb-4">Our Dental Services</h2>
                 <p class="text-sm sm:text-base max-w-2xl mx-auto">We provide comprehensive dental care for your entire family, using the latest technologies in a comfortable environment.</p>
             </div>
             
@@ -169,8 +164,8 @@
                 <div id="cosmetic-dentistry" class="w-full">
                     <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
                         <div class="w-full md:w-1/2 order-2 md:order-1">
-                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-blue-600 mb-3 sm:mb-4 flex items-center font-heading">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 sm:mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-neon-blue mb-3 sm:mb-4 flex items-center font-heading">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 sm:mr-3 text-cornflower-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 Cosmetic Dentistry
@@ -180,7 +175,7 @@
                             </p>
                             <div class="space-y-4 sm:space-y-6">
                                 <div class="flex items-start">
-                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-cornflower-blue flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -192,7 +187,7 @@
                                     </div>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-cornflower-blue flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                         </svg>
@@ -203,7 +198,7 @@
                                     </div>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-cornflower-blue flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                                         </svg>
@@ -215,7 +210,7 @@
                                 </div>
                             </div>
                             <div class="mt-6 sm:mt-8">
-                                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-5 sm:py-3 sm:px-6 rounded-lg transition duration-300">
+                                <a href="#contact" class="inline-block bg-neon-blue hover:bg-cornflower-blue text-white font-medium py-2 px-5 sm:py-3 sm:px-6 rounded-lg transition duration-300">
                                     Schedule Consultation
                                 </a>
                             </div>
@@ -237,8 +232,8 @@
                             </div>
                         </div>
                         <div class="w-full md:w-1/2">
-                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-blue-600 mb-3 sm:mb-4 flex items-center font-heading">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 sm:mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-neon-blue mb-3 sm:mb-4 flex items-center font-heading">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 sm:mr-3 text-cornflower-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6a1 1 0 011-1m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                 </svg>
                                 Restorative Dentistry
@@ -248,7 +243,7 @@
                             </p>
                             <div class="space-y-4 sm:space-y-6">
                                 <div class="flex items-start">
-                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-cornflower-blue flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
@@ -259,7 +254,7 @@
                                     </div>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-cornflower-blue flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                         </svg>
@@ -270,7 +265,7 @@
                                     </div>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-cornflower-blue flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                                         </svg>
@@ -282,7 +277,7 @@
                                 </div>
                             </div>
                             <div class="mt-6 sm:mt-8">
-                                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-5 sm:py-3 sm:px-6 rounded-lg transition duration-300">
+                                <a href="#contact" class="inline-block bg-neon-blue hover:bg-cornflower-blue text-white font-medium py-2 px-5 sm:py-3 sm:px-6 rounded-lg transition duration-300">
                                     Learn More
                                 </a>
                             </div>
@@ -657,19 +652,19 @@
     </section>
 
     <!-- Contact & Appointment Section -->
-    <section id="contact" class="py-12 sm:py-16 md:py-20 bg-blue-800 text-white" aria-labelledby="contact-heading">
+    <section id="contact" class="py-12 sm:py-16 md:py-20 bg-beige text-rich-black" aria-labelledby="contact-heading">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="contact-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 font-heading">Schedule Your Visit</h2>
             <div class="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
                 <!-- Appointment Form -->
                 <div class="bg-white text-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Request an Appointment</h3>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-neon-blue">Request an Appointment</h3>
                     <p class="mb-4 sm:mb-5 text-sm sm:text-base">Fill out the form below, and we'll contact you to confirm your appointment.</p>
                     
                     <form class="space-y-4 sm:space-y-5">
                         <div>
                             <label for="service" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Service Needed</label>
-                            <select id="service" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-sm sm:text-base" required>
+                            <select id="service" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-neon-blue bg-white text-sm sm:text-base" required>
                                 <option value="" disabled selected>Select service</option>
                                 <option value="cleaning">Routine Cleaning & Check-up</option>
                                 <option value="cosmetic">Cosmetic Consultation</option>
@@ -682,136 +677,128 @@
                         <div class="grid grid-cols-2 gap-3 sm:gap-4">
                             <div>
                                 <label for="preferred-date" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Preferred Date</label>
-                                <input type="date" id="preferred-date" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                                <input type="date" id="preferred-date" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-neon-blue text-sm sm:text-base" required>
                             </div>
                             <div>
                                 <label for="preferred-time" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Preferred Time</label>
-                                <select id="preferred-time" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-sm sm:text-base" required>
+                                <select id="preferred-time" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-neon-blue bg-white text-sm sm:text-base" required>
                                     <option value="" disabled selected>Select time</option>
-                                    <option value="morning">Morning (9am - 12pm)</option>
-                                    <option value="afternoon">Afternoon (1pm - 5pm)</option>
-                                    <option value="evening">Evening (5pm - 7pm)</option>
+                                    <option value="morning">Morning</option>
+                                    <option value="afternoon">Afternoon</option>
+                                    <option value="evening">Evening</option>
                                 </select>
                             </div>
                         </div>
                         
                         <div>
                             <label for="name" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Full Name</label>
-                            <input type="text" id="name" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                            <input type="text" id="name" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-neon-blue text-sm sm:text-base" required>
                         </div>
                         
                         <div class="grid grid-cols-2 gap-3 sm:gap-4">
                             <div>
                                 <label for="phone" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                                <input type="tel" id="phone" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-neon-blue text-sm sm:text-base" required>
                             </div>
                             <div>
                                 <label for="email" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Email Address</label>
-                                <input type="email" id="email" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                                <input type="email" id="email" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-neon-blue text-sm sm:text-base" required>
                             </div>
                         </div>
                         
                         <div>
-                            <label for="notes" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Additional Notes <span class="text-gray-500 text-xs sm:text-sm">(Optional)</span></label>
-                            <textarea id="notes" rows="3" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"></textarea>
+                            <label for="message" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Additional Information</label>
+                            <textarea id="message" rows="3" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-neon-blue text-sm sm:text-base"></textarea>
                         </div>
                         
-                        <button type="submit" class="bg-blue-600 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-800 transition duration-300 w-full font-medium text-sm sm:text-base">Schedule Appointment</button>
+                        <div>
+                            <button type="submit" class="w-full bg-neon-blue text-white py-2 sm:py-3 rounded-md hover:bg-cornflower-blue transition duration-300 text-sm sm:text-base">Submit Request</button>
+                        </div>
                     </form>
-                    
-                    <div class="mt-5 sm:mt-6 text-center">
-                        <p class="text-gray-600 mb-2 text-sm sm:text-base">Prefer to schedule by phone?</p>
-                        <a href="tel:+11234567890" class="inline-flex items-center justify-center text-blue-600 font-medium hover:text-blue-800 text-sm sm:text-base">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                            Call (123) 456-7890
-                        </a>
-                    </div>
                 </div>
                 
-                <!-- Contact & Location Information -->
-                <div class="space-y-4 sm:space-y-6">
-                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-gray-800">
-                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Office Information</h3>
-                        <div class="space-y-4">
+                <!-- Contact Information -->
+                <div class="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-neon-blue">Contact Information</h3>
+                        
+                        <div class="space-y-4 sm:space-y-5">
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-cornflower-blue mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                                 <div>
-                                    <h4 class="font-medium text-sm sm:text-base">Address</h4>
-                                    <p class="text-sm sm:text-base">123 Dental Street, Suite 101<br>Cityville, State 12345</p>
-                                    <a href="https://maps.google.com" target="_blank" class="text-blue-600 text-xs sm:text-sm hover:text-blue-900 inline-flex items-center mt-1">
-                                        Get Directions
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                    </a>
+                                    <h4 class="font-semibold text-base">Office Location</h4>
+                                    <p class="text-sm sm:text-base">123 Main Street, Suite 456<br>Anytown, CA 12345</p>
                                 </div>
                             </div>
+                            
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <div>
-                                    <h4 class="font-medium text-sm sm:text-base">Phone</h4>
-                                    <p class="text-sm sm:text-base"><a href="tel:+11234567890" class="hover:text-blue-600">(123) 456-7890</a></p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <div>
-                                    <h4 class="font-medium text-sm sm:text-base">Email</h4>
-                                    <p class="text-sm sm:text-base"><a href="mailto:info@dentalclinic.com" class="hover:text-blue-600">info@dentalclinic.com</a></p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-cornflower-blue mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 <div>
-                                    <h4 class="font-medium text-sm sm:text-base">Hours</h4>
-                                    <p class="text-sm sm:text-base">Monday - Friday: 9am - 7pm<br>Saturday: 9am - 2pm<br>Sunday: Closed</p>
+                                    <h4 class="font-semibold text-base">Office Hours</h4>
+                                    <p class="text-sm sm:text-base">
+                                        Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                        Saturday: 9:00 AM - 2:00 PM<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-cornflower-blue mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-base">Phone</h4>
+                                    <p class="text-sm sm:text-base">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-cornflower-blue mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-base">Email</h4>
+                                    <p class="text-sm sm:text-base">info@dentalclinic.com</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Google Map -->
-                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-gray-800">
-                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Find Us</h3>
-                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden bg-gray-200">
-                            <!-- Map placeholder - In a real implementation, this would be a Google Maps embed -->
-                            <div class="w-full h-full flex items-center justify-center">
-                                <div class="text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 sm:h-16 sm:w-16 mx-auto text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                                    </svg>
-                                    <p class="text-gray-500 text-sm sm:text-base">Interactive Map</p>
-                                    <p class="text-xs sm:text-sm text-gray-400">(Google Maps would be embedded here)</p>
-                                </div>
-                            </div>
+                    <div class="mt-6 sm:mt-8">
+                        <h4 class="font-semibold text-base mb-3">Connect With Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-neon-blue text-white p-2 rounded-full hover:bg-cornflower-blue transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-neon-blue text-white p-2 rounded-full hover:bg-cornflower-blue transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.194.165-.42.295-.673.393.44-.058.795-.208 1.1-.426-.142.219-.327.41-.554.565.21.019.418.028.633.033 0 0-.235 1.412-1.35 2.502-.913.82-1.693.82-1.837.822.44.018.798.24.923.58-.564-.054-1.123-.248-1.623-.573.06.273.18.523.348.732-.488-.09-.947-.332-1.318-.7.082.26.233.494.433.687-.169.012-.338.024-.505.024.151.41.445.744.857.955-.596.112-1.168.087-1.67-.08-.141.157-.211.349-.211.543 0 .463.375.839.839.839.199 0 .382-.068.526-.184 1.267.254 2.6-.165 3.303-1.128.234-.324.354-.759.354-1.206 0-.088-.005-.175-.015-.261.236-.175.44-.394.6-.643z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-neon-blue text-white p-2 rounded-full hover:bg-cornflower-blue transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-neon-blue text-white p-2 rounded-full hover:bg-cornflower-blue transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 15.982c-.297.125-.625.219-.967.281-.375-.422-.922-.75-1.533-.922-.61-.172-1.266-.144-1.867.078-.601.222-1.094.63-1.414 1.172-.319.542-.419 1.176-.273 1.781.3.129.68.246.13.359-1.739-.089-3.212-.809-4.336-1.973.544.938.306 2.159.767 3.047.306.578.796 1.055 1.336 1.391-.552-.018-1.083-.16-1.566-.42v.042c0 .61.129 1.21.422 1.756.294.547.728.984 1.252 1.266.273.122.552.208.839.258-.503.132-1.031.151-1.542.052.168.522.458.998.848 1.375.39.376.855.662 1.367.833-1.268.995-2.868 1.542-4.523 1.542-.291 0-.583-.017-.875-.049 1.634 1.05 3.547 1.608 5.505 1.608 1.917 0 3.78-.402 5.5-1.188 1.72-.787 3.218-1.905 4.336-3.261 1.117-1.356 1.98-2.98 2.506-4.712.527-1.733.792-3.578.792-5.489 0-.39-.008-.781-.024-1.172.953-.682 1.682-1.495 2.203-2.469-.53.239-1.126.408-1.715.5z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-neon-blue text-white p-2 rounded-full hover:bg-cornflower-blue transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                                </svg>
+                            </a>
                         </div>
-                    </div>
-                    
-                    <!-- Request Callback -->
-                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-gray-800">
-                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Request a Callback</h3>
-                        <form class="space-y-3 sm:space-y-4">
-                            <div>
-                                <label for="callback-name" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Name</label>
-                                <input type="text" id="callback-name" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
-                            </div>
-                            <div>
-                                <label for="callback-phone" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Phone Number</label>
-                                <input type="tel" id="callback-phone" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
-                            </div>
-                            <button type="submit" class="bg-blue-600 text-white px-4 py-2 sm:py-2.5 rounded-lg hover:bg-blue-800 transition duration-300 w-full text-sm sm:text-base">Request Callback</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -819,107 +806,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-700 text-white py-8" role="contentinfo">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Column 1: About -->
-                <div>
-                    <div class="flex items-center mb-4">
-                        <img src="public/assets/logo-white.png" alt="Dental Clinic Logo" class="h-10 w-auto mr-2" width="40" height="40">
-                        <h3 class="text-xl font-semibold">Dental Clinic</h3>
-                    </div>
-                    <p class="mb-4">Providing quality dental care for you and your family with a focus on comfort and modern techniques.</p>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" aria-label="Facebook" class="hover:text-blue-300 transition duration-300">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter" class="hover:text-blue-300 transition duration-300">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Instagram" class="hover:text-blue-300 transition duration-300">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="YouTube" class="hover:text-blue-300 transition duration-300">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div>
-                        <img src="public/assets/ada-member.png" alt="ADA Member" class="h-12 w-auto" loading="lazy">
-                    </div>
+    <footer class="bg-rich-black text-white py-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <img src="public/assets/logo.png" alt="Dental Clinic Logo" class="h-8 sm:h-10 inline-block mb-2">
+                    <p class="text-sm sm:text-base">&copy; 2023 Dental Clinic. All rights reserved.</p>
                 </div>
-                
-                <!-- Column 2: Quick Links -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="hover:text-blue-300 transition duration-300">Home</a></li>
-                        <li><a href="#services" class="hover:text-blue-300 transition duration-300">Services</a></li>
-                        <li><a href="#about" class="hover:text-blue-300 transition duration-300">About Us</a></li>
-                        <li><a href="#team" class="hover:text-blue-300 transition duration-300">Our Team</a></li>
-                        <li><a href="#testimonials" class="hover:text-blue-300 transition duration-300">Testimonials</a></li>
-                        <li><a href="#faq" class="hover:text-blue-300 transition duration-300">FAQs</a></li>
-                        <li><a href="#contact" class="hover:text-blue-300 transition duration-300">Contact</a></li>
-                        <li><a href="#" class="hover:text-blue-300 transition duration-300">Patient Portal</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3: Services -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Our Services</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#general-dentistry" class="hover:text-blue-300 transition duration-300">General Dentistry</a></li>
-                        <li><a href="#cosmetic-dentistry" class="hover:text-blue-300 transition duration-300">Cosmetic Dentistry</a></li>
-                        <li><a href="#restorative-dentistry" class="hover:text-blue-300 transition duration-300">Restorative Dentistry</a></li>
-                        <li><a href="#" class="hover:text-blue-300 transition duration-300">Pediatric Dentistry</a></li>
-                        <li><a href="#" class="hover:text-blue-300 transition duration-300">Emergency Dental Care</a></li>
-                        <li><a href="#" class="hover:text-blue-300 transition duration-300">Invisalign & Orthodontics</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4: Newsletter -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Stay Connected</h3>
-                    <p class="mb-4">Subscribe to our newsletter for dental health tips and special offers.</p>
-                    <form class="flex mb-6">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md w-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                        <button type="submit" class="bg-blue-900 px-4 py-2 rounded-r-md hover:bg-blue-800 transition duration-300 whitespace-nowrap">Subscribe</button>
-                    </form>
-                    
-                    <div>
-                        <h4 class="font-medium mb-2">Contact Us</h4>
-                        <a href="tel:+11234567890" class="flex items-center hover:text-blue-300 transition duration-300 mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                            (123) 456-7890
-                        </a>
-                        <a href="mailto:info@dentalclinic.com" class="flex items-center hover:text-blue-300 transition duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            info@dentalclinic.com
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="my-6 border-blue-600">
-            
-            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                <p class="mb-4 md:mb-0">© 2025 Dental Clinic. All rights reserved.</p>
-                <div class="space-x-4">
-                    <a href="#" class="hover:text-blue-300 transition duration-300">Privacy Policy</a>
-                    <a href="#" class="hover:text-blue-300 transition duration-300">Terms of Service</a>
-                    <a href="#" class="hover:text-blue-300 transition duration-300">Accessibility</a>
-                    <a href="#" class="hover:text-blue-300 transition duration-300">Sitemap</a>
+                <div class="text-center md:text-right">
+                    <p class="text-sm sm:text-base">Designed with care for your smile</p>
                 </div>
             </div>
         </div>

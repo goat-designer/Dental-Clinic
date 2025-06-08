@@ -4,16 +4,28 @@
 
 /* Custom styles can be added here */
 @layer base {
+    :root {
+        --color-rich-black: 0, 23, 31; /* #00171F */
+        --color-neon-blue: 84, 101, 255; /* #5465FF */
+        --color-cornflower-blue: 120, 139, 255; /* #788BFF */
+        --color-raspberry: 216, 30, 91; /* #D81E5B */
+        --color-beige: 248, 248, 221; /* #F8F8DD */
+    }
+    
     html {
         scroll-behavior: smooth;
     }
     
     body {
-        @apply font-sans;
+        font-family: 'Merriweather', serif;
     }
     
     h1, h2, h3, h4, h5, h6 {
         @apply font-bold;
+    }
+    
+    .font-heading {
+        font-family: 'Inter', sans-serif;
     }
 }
 
@@ -27,11 +39,16 @@
     }
     
     .btn-primary {
-        @apply bg-blue-600 text-white hover:bg-blue-800;
+        @apply bg-blue-600 text-white hover:bg-blue-700;
     }
     
     .btn-secondary {
         @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+    }
+    
+    .text-2xs {
+        font-size: 0.65rem;
+        line-height: 1rem;
     }
 }
 
@@ -40,11 +57,60 @@
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     }
     
-    .text-2xs {
-        font-size: 0.625rem;
-    }
-    
     .break-words {
         word-break: break-word;
     }
+}
+
+/* Custom color utilities */
+.bg-rich-black {
+    background-color: rgb(var(--color-rich-black));
+}
+
+.bg-neon-blue {
+    background-color: rgb(var(--color-neon-blue));
+}
+
+.bg-cornflower-blue {
+    background-color: rgb(var(--color-cornflower-blue));
+}
+
+.bg-raspberry {
+    background-color: rgb(var(--color-raspberry));
+}
+
+.bg-beige {
+    background-color: rgb(var(--color-beige));
+}
+
+.text-rich-black {
+    color: rgb(var(--color-rich-black));
+}
+
+.text-neon-blue {
+    color: rgb(var(--color-neon-blue));
+}
+
+.text-cornflower-blue {
+    color: rgb(var(--color-cornflower-blue));
+}
+
+.text-raspberry {
+    color: rgb(var(--color-raspberry));
+}
+
+.border-rich-black {
+    border-color: rgb(var(--color-rich-black));
+}
+
+.border-neon-blue {
+    border-color: rgb(var(--color-neon-blue));
+}
+
+.border-cornflower-blue {
+    border-color: rgb(var(--color-cornflower-blue));
+}
+
+.border-raspberry {
+    border-color: rgb(var(--color-raspberry));
 } 
