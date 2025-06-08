@@ -27,7 +27,7 @@
     }
     
     .btn-primary {
-        @apply bg-blue-600 text-white hover:bg-blue-700;
+        @apply bg-blue-600 text-white hover:bg-blue-800;
     }
     
     .btn-secondary {
@@ -38,5 +38,13 @@
 @layer utilities {
     .text-shadow {
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .text-2xs {
+        font-size: 0.625rem;
+    }
+    
+    .break-words {
+        word-break: break-word;
     }
 } 

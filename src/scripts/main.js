@@ -167,33 +167,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // FAQ Accordion
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        const icon = item.querySelector('.faq-icon');
-        
-        if (question && answer && icon) {
-            question.addEventListener('click', () => {
-                // Toggle current item
-                answer.classList.toggle('hidden');
-                icon.classList.toggle('rotate-180');
+    // FAQ Toggle functionality
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    
+    faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            // Find the adjacent content div
+            const content = this.nextElementSibling;
+            
+            // Find the icon within this toggle button
+            const icon = this.querySelector('.faq-icon');
+            
+            // Toggle visibility of content
+            if (content) {
+                content.classList.toggle('hidden');
                 
-                // Close other items
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        const otherAnswer = otherItem.querySelector('.faq-answer');
-                        const otherIcon = otherItem.querySelector('.faq-icon');
-                        
-                        if (otherAnswer && !otherAnswer.classList.contains('hidden')) {
-                            otherAnswer.classList.add('hidden');
-                            otherIcon.classList.remove('rotate-180');
+                // Update aria-expanded attribute
+                const isExpanded = content.classList.contains('hidden') ? 'false' : 'true';
+                this.setAttribute('aria-expanded', isExpanded);
+                
+                // Rotate the icon
+                if (icon) {
+                    icon.classList.toggle('rotate-180');
+                }
+                
+                // Optional: Close other FAQs when opening this one
+                if (!content.classList.contains('hidden')) {
+                    faqToggles.forEach(otherToggle => {
+                        if (otherToggle !== this) {
+                            const otherContent = otherToggle.nextElementSibling;
+                            const otherIcon = otherToggle.querySelector('.faq-icon');
+                            
+                            if (otherContent && !otherContent.classList.contains('hidden')) {
+                                otherContent.classList.add('hidden');
+                                otherToggle.setAttribute('aria-expanded', 'false');
+                                
+                                if (otherIcon) {
+                                    otherIcon.classList.remove('rotate-180');
+                                }
+                            }
                         }
-                    }
-                });
-            });
-        }
+                    });
+                }
+            }
+        });
     });
 
     // Handle image loading

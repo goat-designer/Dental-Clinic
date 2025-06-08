@@ -10,10 +10,13 @@
     <meta property="og:url" content="https://dentalclinic.example.com">
     <meta property="og:image" content="public/assets/logo.png">
     <link rel="icon" href="public/assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/output.css">
     <title>Dental Clinic - Your Trusted Dental Care Provider</title>
 </head>
-<body class="font-sans text-gray-800 bg-gray-50">
+<body class="font-body text-gray-800 bg-gray-50">
     <!-- Header Section - Sticky Navigation Bar -->
     <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50" role="banner">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -21,7 +24,7 @@
                 <a href="#home">
                     <img src="public/assets/logo.png" alt="Dental Clinic Logo" class="h-8 sm:h-10 md:h-12 w-auto" width="150" height="60">
                 </a>
-                <span class="ml-2 md:ml-3 text-xl sm:text-2xl font-semibold text-blue-600">Dental Clinic</span>
+                <span class="ml-2 md:ml-3 text-xl sm:text-2xl font-semibold text-blue-600 font-heading">Dental Clinic</span>
             </div>
             <div class="hidden md:flex items-center">
                 <a href="tel:+11234567890" class="mr-4 text-blue-600 font-medium hover:text-blue-800">
@@ -36,9 +39,9 @@
             </div>
             <nav aria-label="Main Navigation" class="hidden md:block">
                 <ul class="flex space-x-6">
-                    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="#home" class="hover:text-blue-900">Home</a></li>
                     <li class="relative group">
-                        <a href="#services" class="hover:text-blue-600 flex items-center">
+                        <a href="#services" class="hover:text-blue-900 flex items-center">
                             Services
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -50,8 +53,8 @@
                             <a href="#restorative-dentistry" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Restorative Dentistry</a>
                         </div>
                     </li>
-                    <li><a href="#about" class="hover:text-blue-600">About Us</a></li>
-                    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+                    <li><a href="#about" class="hover:text-blue-900">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-blue-900">Contact</a></li>
                 </ul>
             </nav>
             <!-- Mobile menu button -->
@@ -65,22 +68,22 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md z-10">
             <ul class="px-4 py-2">
-                <li class="py-2"><a href="#home" class="block hover:text-blue-600">Home</a></li>
+                <li class="py-2"><a href="#home" class="block hover:text-blue-900">Home</a></li>
                 <li class="py-2">
-                    <button class="flex items-center justify-between w-full text-left hover:text-blue-600" id="services-dropdown-btn">
+                    <button class="flex items-center justify-between w-full text-left hover:text-blue-900" id="services-dropdown-btn">
                         Services
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div class="hidden pl-4 pt-2" id="services-dropdown">
-                        <a href="#general-dentistry" class="block py-2 hover:text-blue-600">General Dentistry</a>
-                        <a href="#cosmetic-dentistry" class="block py-2 hover:text-blue-600">Cosmetic Dentistry</a>
-                        <a href="#restorative-dentistry" class="block py-2 hover:text-blue-600">Restorative Dentistry</a>
+                        <a href="#general-dentistry" class="block py-2 hover:text-blue-900">General Dentistry</a>
+                        <a href="#cosmetic-dentistry" class="block py-2 hover:text-blue-900">Cosmetic Dentistry</a>
+                        <a href="#restorative-dentistry" class="block py-2 hover:text-blue-900">Restorative Dentistry</a>
                     </div>
                 </li>
-                <li class="py-2"><a href="#about" class="block hover:text-blue-600">About Us</a></li>
-                <li class="py-2"><a href="#contact" class="block hover:text-blue-600">Contact</a></li>
+                <li class="py-2"><a href="#about" class="block hover:text-blue-900">About Us</a></li>
+                <li class="py-2"><a href="#contact" class="block hover:text-blue-900">Contact</a></li>
                 <li class="py-2 mt-2">
                     <a href="tel:+11234567890" class="flex items-center text-blue-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,7 +93,7 @@
                     </a>
                 </li>
                 <li class="py-3">
-                    <a href="#contact" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Book Now</a>
+                    <a href="#contact" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300">Book Now</a>
                 </li>
             </ul>
         </div>
@@ -102,41 +105,41 @@
     <section id="home" class="py-8 sm:py-12 md:py-16 bg-blue-50" aria-labelledby="hero-heading">
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
             <div>
-                <h1 id="hero-heading" class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800 mb-4">Transform Your Smile with Trusted Dental Care</h1>
-                <p class="text-base sm:text-lg mb-6">Comprehensive Services for the Whole Family</p>
-                <a href="#contact" class="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg inline-block hover:bg-blue-700 transition duration-300">Schedule Your Free Consultation</a>
+                <h1 id="hero-heading" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600 mb-4 break-words font-heading">Transform Your Smile with Trusted Dental Care</h1>
+                <p class="text-sm sm:text-base lg:text-lg mb-6">Comprehensive Services for the Whole Family</p>
+                <a href="#contact" class="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg inline-block hover:bg-blue-800 transition duration-300 text-sm sm:text-base">Schedule Your Free Consultation</a>
                 
                 <!-- Trust Signals -->
                 <div class="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-yellow-500 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-yellow-500 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                         </svg>
-                        <span class="text-xs sm:text-sm">5-Star Rated</span>
+                        <span class="text-2xs sm:text-xs md:text-sm">5-Star Rated</span>
                     </div>
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-600 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-blue-600 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <span class="text-xs sm:text-sm">ADA Certified</span>
+                        <span class="text-2xs sm:text-xs md:text-sm">ADA Certified</span>
                     </div>
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-green-600 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-green-600 mr-1 sm:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <span class="text-xs sm:text-sm">Same Day Appointments</span>
+                        <span class="text-2xs sm:text-xs md:text-sm">Same Day Appointments</span>
                     </div>
                 </div>
                 
                 <!-- Patient Testimonial Preview -->
                 <div class="mt-4 sm:mt-6 bg-white p-3 sm:p-4 rounded-lg shadow-sm border border-gray-100">
                     <div class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-blue-600 mr-2 sm:mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-blue-600 mr-2 sm:mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                         </svg>
                         <div>
-                            <p class="text-xs sm:text-sm italic">"Dr. Smith and her team provided exceptional care. The procedure was painless and the results are amazing!"</p>
-                            <p class="text-xs text-blue-600 mt-1 font-semibold">- Sarah Johnson, Patient</p>
+                            <p class="text-2xs sm:text-xs md:text-sm italic">"Dr. Smith and her team provided exceptional care. The procedure was painless and results are amazing!"</p>
+                            <p class="text-2xs sm:text-xs text-blue-600 mt-1 font-semibold">- Sarah Johnson, Patient</p>
                         </div>
                     </div>
                 </div>
@@ -148,187 +151,269 @@
     </section>
 
     <!-- Services Overview Section -->
-    <section id="services" class="py-8 sm:py-12 md:py-16" aria-labelledby="services-heading">
-        <div class="container mx-auto px-4">
-            <h2 id="services-heading" class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Our Comprehensive Dental Services</h2>
-            
-            <!-- General Dentistry -->
-            <div id="general-dentistry" class="mb-10 sm:mb-16">
-                <h3 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4 sm:mb-6 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 mr-2 sm:mr-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    General Dentistry
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-                    <div class="bg-white p-4 sm:p-5 rounded-lg shadow-md flex flex-col h-full">
-                        <div class="mb-3 text-blue-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                            </svg>
-                        </div>
-                        <h4 class="text-base sm:text-lg font-semibold mb-2">Routine Check-ups</h4>
-                        <p class="text-sm sm:text-base text-gray-700 mb-4 flex-grow">Comprehensive exams, digital x-rays, and professional cleanings to maintain optimal oral health.</p>
-                        <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
-                            Schedule Now
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                    
-                    <div class="bg-white p-4 sm:p-5 rounded-lg shadow-md flex flex-col h-full">
-                        <div class="mb-3 text-blue-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-base sm:text-lg font-semibold mb-2">Preventive Care</h4>
-                        <p class="text-sm sm:text-base text-gray-700 mb-4 flex-grow">Fluoride treatments, dental sealants, and customized preventive plans to protect your smile.</p>
-                        <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                    
-                    <div class="bg-white p-4 sm:p-5 rounded-lg shadow-md flex flex-col h-full">
-                        <div class="mb-3 text-blue-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-base sm:text-lg font-semibold mb-2">Family Dentistry</h4>
-                        <p class="text-sm sm:text-base text-gray-700 mb-4 flex-grow">Specialized care for patients of all ages, from children to seniors, in a comfortable environment.</p>
-                        <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
-                            View Services
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+    <section id="services" class="py-12 sm:py-16 md:py-20" aria-labelledby="services-heading">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8 sm:mb-12 md:mb-16">
+                <h2 id="services-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 font-heading mb-3 sm:mb-4">Our Dental Services</h2>
+                <p class="text-sm sm:text-base max-w-2xl mx-auto">We provide comprehensive dental care for your entire family, using the latest technologies in a comfortable environment.</p>
             </div>
             
-            <!-- Cosmetic Dentistry -->
-            <div id="cosmetic-dentistry" class="mb-10 sm:mb-16">
-                <h3 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4 sm:mb-6 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 mr-2 sm:mr-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Cosmetic Dentistry
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-                    <!-- More service cards here -->
+            <!-- Dental Services Section: Alternating sections for Cosmetic and Restorative -->
+            <div class="space-y-16 sm:space-y-24 md:space-y-32">
+                <!-- Cosmetic Dentistry -->
+                <div id="cosmetic-dentistry" class="w-full">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
+                        <div class="w-full md:w-1/2 order-2 md:order-1">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-blue-600 mb-3 sm:mb-4 flex items-center font-heading">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 sm:mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                Cosmetic Dentistry
+                            </h3>
+                            <p class="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                                Transform your smile with our advanced cosmetic dentistry services. Our experienced team provides personalized treatments to enhance the appearance of your teeth and boost your confidence.
+                            </p>
+                            <div class="space-y-4 sm:space-y-6">
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Teeth Whitening</h4>
+                                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed">Professional whitening treatments that can brighten your smile by several shades in just one visit.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Porcelain Veneers</h4>
+                                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed">Custom-made thin shells that cover the front surface of teeth to improve appearance and protect damaged surfaces.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Smile Makeovers</h4>
+                                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed">Comprehensive treatments combining multiple procedures to achieve your ideal smile transformation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6 sm:mt-8">
+                                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-5 sm:py-3 sm:px-6 rounded-lg transition duration-300">
+                                    Schedule Consultation
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 order-1 md:order-2 mb-6 md:mb-0">
+                            <div class="bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg shadow-lg w-full h-56 sm:h-64 md:h-80 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 sm:h-16 sm:w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Restorative Dentistry -->
-            <div id="restorative-dentistry">
-                <h3 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4 sm:mb-6 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 mr-2 sm:mr-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                    </svg>
-                    Restorative Dentistry
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-                    <!-- More service cards here -->
+                
+                <!-- Restorative Dentistry -->
+                <div id="restorative-dentistry" class="w-full">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
+                        <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg shadow-lg w-full h-56 sm:h-64 md:h-80 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 sm:h-16 sm:w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6a1 1 0 011-1m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-blue-600 mb-3 sm:mb-4 flex items-center font-heading">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 sm:mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6a1 1 0 011-1m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
+                                Restorative Dentistry
+                            </h3>
+                            <p class="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                                Restore the function and appearance of your teeth with our advanced restorative treatments. We use the latest techniques and materials to provide long-lasting, natural-looking results.
+                            </p>
+                            <div class="space-y-4 sm:space-y-6">
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Dental Implants</h4>
+                                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed">Permanent tooth replacement solutions that look, feel and function like natural teeth.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Crowns & Bridges</h4>
+                                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed">Custom-made prosthetic devices to restore damaged teeth or replace missing teeth.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-3 sm:mr-4 text-blue-800 flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Dentures</h4>
+                                        <p class="text-sm sm:text-base text-gray-700 leading-relaxed">Full or partial removable replacements for missing teeth, improving appearance and oral function.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6 sm:mt-8">
+                                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-5 sm:py-3 sm:px-6 rounded-lg transition duration-300">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Us / Why Choose Us Section -->
-    <section id="about" class="py-16 bg-blue-50" aria-labelledby="about-heading">
-        <div class="container mx-auto px-4">
-            <h2 id="about-heading" class="text-3xl font-bold text-center mb-12">Why Choose Our Dental Practice</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Our Team & Philosophy</h3>
-                    <p class="mb-4">With over 15 years of experience, our dental practice is committed to providing the highest quality dental care in a comfortable and welcoming environment.</p>
-                    <p class="mb-4">Our team of skilled professionals uses the latest technologies and techniques to ensure that each patient receives personalized care tailored to their specific needs.</p>
+    <section id="about" class="py-12 sm:py-16 bg-blue-50" aria-labelledby="about-heading">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="about-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 text-blue-600 font-heading leading-tight">Why Choose Our Dental Practice</h2>
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+                <div class="space-y-5 sm:space-y-6">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800 font-heading leading-tight">Our Team & Philosophy</h3>
+                        <p class="mb-3 sm:mb-4 text-sm sm:text-base leading-relaxed">With over 15 years of experience, our dental practice is committed to providing the highest quality dental care in a comfortable and welcoming environment.</p>
+                        <p class="mb-3 sm:mb-4 text-sm sm:text-base leading-relaxed">Our team of skilled professionals uses the latest technologies and techniques to ensure that each patient receives personalized care tailored to their specific needs.</p>
+                    </div>
                     
-                    <h3 class="text-xl font-semibold mt-6 mb-4">What Sets Us Apart</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span><strong>Extended Hours:</strong> Open evenings and weekends for your convenience</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span><strong>Emergency Care:</strong> Same-day emergency appointments available</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span><strong>Multilingual Staff:</strong> Services available in English, Spanish, and Mandarin</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span><strong>Latest Technology:</strong> State-of-the-art equipment for better diagnosis and treatment</span>
-                        </li>
-                    </ul>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800 leading-tight">What Sets Us Apart</h3>
+                        <ul class="space-y-2 sm:space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-sm sm:text-base"><strong>Extended Hours:</strong> Open evenings and weekends for your convenience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-sm sm:text-base"><strong>Emergency Care:</strong> Same-day emergency appointments available</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-sm sm:text-base"><strong>Multilingual Staff:</strong> Services available in English, Spanish, and Mandarin</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-sm sm:text-base"><strong>Latest Technology:</strong> State-of-the-art equipment for better diagnosis and treatment</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="flex flex-col space-y-6">
-                    <img src="public/assets/clinic.jpg" alt="Our modern dental clinic" class="rounded-lg shadow-lg" loading="lazy" width="600" height="400">
-                    <div class="grid grid-cols-2 gap-4">
-                        <img src="public/assets/dentist-working.jpg" alt="Dentist working with patient" class="rounded-lg shadow-lg h-40 object-cover" loading="lazy">
-                        <img src="public/assets/dental-team.jpg" alt="Our dental team" class="rounded-lg shadow-lg h-40 object-cover" loading="lazy">
+                <div class="flex flex-col space-y-4 sm:space-y-6 mt-6 md:mt-0">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg shadow-lg w-full h-52 sm:h-64 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                        <div class="bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg shadow-lg h-32 sm:h-40 w-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg shadow-lg h-32 sm:h-40 w-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Team Section -->
-    <section id="team" class="py-16" aria-labelledby="team-heading">
-        <div class="container mx-auto px-4">
-            <h2 id="team-heading" class="text-3xl font-bold text-center mb-12">Our Expert Dental Team</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+    <section id="team" class="py-12 sm:py-16 md:py-20" aria-labelledby="team-heading">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="team-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 text-blue-600 font-heading">Our Expert Dental Team</h2>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Team Member 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img src="public/assets/doctor1.jpg" alt="Dr. Jane Smith" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover" loading="lazy" width="192" height="192">
-                    <h3 class="text-xl font-semibold mb-1">Dr. Jane Smith</h3>
-                    <p class="text-blue-600 mb-3">General Dentist</p>
-                    <p>Dr. Smith has over 10 years of experience in general dentistry, with a focus on preventive care.</p>
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full mx-auto mb-4 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1 font-heading">Dr. Jane Smith</h3>
+                    <p class="text-blue-800 mb-3">General Dentist</p>
+                    <p class="text-sm sm:text-base">Dr. Smith has over 10 years of experience in general dentistry, with a focus on preventive care.</p>
                 </div>
                 <!-- Team Member 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img src="public/assets/doctor2.jpg" alt="Dr. John Davis" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover" loading="lazy" width="192" height="192">
-                    <h3 class="text-xl font-semibold mb-1">Dr. John Davis</h3>
-                    <p class="text-blue-600 mb-3">Cosmetic Specialist</p>
-                    <p>Dr. Davis specializes in cosmetic dentistry, helping patients achieve the smile of their dreams.</p>
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full mx-auto mb-4 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1">Dr. John Davis</h3>
+                    <p class="text-blue-800 mb-3">Cosmetic Specialist</p>
+                    <p class="text-sm sm:text-base">Dr. Davis specializes in cosmetic dentistry, helping patients achieve the smile of their dreams.</p>
                 </div>
                 <!-- Team Member 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img src="public/assets/doctor3.jpg" alt="Dr. Sarah Johnson" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover" loading="lazy" width="192" height="192">
-                    <h3 class="text-xl font-semibold mb-1">Dr. Sarah Johnson</h3>
-                    <p class="text-blue-600 mb-3">Orthodontist</p>
-                    <p>Dr. Johnson is our orthodontics expert, specializing in aligning teeth and correcting bites.</p>
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full mx-auto mb-4 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1">Dr. Sarah Johnson</h3>
+                    <p class="text-blue-800 mb-3">Orthodontist</p>
+                    <p class="text-sm sm:text-base">Dr. Johnson is our orthodontics expert, specializing in aligning teeth and correcting bites.</p>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- Patient Testimonials Section -->
-    <section id="testimonials" class="py-16 bg-blue-50" aria-labelledby="testimonials-heading">
-        <div class="container mx-auto px-4">
-            <h2 id="testimonials-heading" class="text-3xl font-bold text-center mb-12">What Our Patients Say</h2>
+    <section id="testimonials" class="py-12 sm:py-16 md:py-20 bg-blue-50" aria-labelledby="testimonials-heading">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="testimonials-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 text-blue-600 font-heading">What Our Patients Say</h2>
             
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
                 <!-- Written Testimonials -->
                 <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <div class="flex items-center mb-4">
+                    <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-3 sm:mb-4">
                             <div class="flex text-yellow-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
@@ -349,7 +434,11 @@
                         </div>
                         <p class="italic mb-3">"I've been terrified of dentists my whole life, but Dr. Smith made me feel completely at ease. The procedure was literally pain-free, and the results are incredible. I actually look forward to my next appointment!"</p>
                         <div class="flex items-center">
-                            <img src="public/assets/patient1.jpg" alt="Michael Thompson" class="w-10 h-10 rounded-full mr-3" loading="lazy">
+                            <div class="w-10 h-10 rounded-full mr-3 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                            </div>
                             <div>
                                 <p class="font-semibold">Michael Thompson</p>
                                 <p class="text-sm text-gray-600">Dental Implant Patient</p>
@@ -380,7 +469,11 @@
                         </div>
                         <p class="italic mb-3">"My children actually ask to go to the dentist now! The staff is so friendly and patient with kids. Dr. Johnson took the time to explain everything in a way they could understand, making the whole experience positive and educational."</p>
                         <div class="flex items-center">
-                            <img src="public/assets/patient2.jpg" alt="Jennifer Lopez" class="w-10 h-10 rounded-full mr-3" loading="lazy">
+                            <div class="w-10 h-10 rounded-full mr-3 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                            </div>
                             <div>
                                 <p class="font-semibold">Jennifer Lopez</p>
                                 <p class="text-sm text-gray-600">Parent of 2</p>
@@ -390,44 +483,43 @@
                 </div>
                 
                 <!-- Video Testimonial -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Hear From Our Patients</h3>
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Hear From Our Patients</h3>
                     <div class="aspect-w-16 aspect-h-9 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div class="text-center p-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div class="text-center p-4 sm:p-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 sm:h-16 sm:w-16 mx-auto text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <p class="text-gray-500">Video Testimonial<br>(This would be a real video in production)</p>
+                            <p class="text-gray-500 text-sm sm:text-base">Video Testimonial<br>(This would be a real video in production)</p>
                         </div>
-                        <!-- In a real implementation, this would be a video player -->
-                        <!-- <video controls class="rounded-lg w-full">
-                            <source src="public/videos/testimonial.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> -->
                     </div>
-                    <p class="mb-4">"After years of being embarrassed about my smile, I finally decided to do something about it. Dr. Davis created a customized treatment plan for me, and now I can't stop smiling! Watch my full journey in this video."</p>
+                    <p class="mb-4 text-sm sm:text-base">"After years of being embarrassed about my smile, I finally decided to do something about it. Dr. Davis created a customized treatment plan for me, and now I can't stop smiling! Watch my full journey in this video."</p>
                     <div class="flex items-center">
-                        <img src="public/assets/patient3.jpg" alt="Robert Chen" class="w-10 h-10 rounded-full mr-3" loading="lazy">
+                        <div class="w-10 h-10 rounded-full mr-3 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
                         <div>
-                            <p class="font-semibold">Robert Chen</p>
-                            <p class="text-sm text-gray-600">Smile Makeover Patient</p>
+                            <p class="font-semibold text-sm sm:text-base">Robert Chen</p>
+                            <p class="text-xs sm:text-sm text-gray-600">Smile Makeover Patient</p>
                         </div>
                     </div>
                     
                     <!-- Google Reviews Link -->
-                    <div class="mt-6 pt-5 border-t border-gray-200">
-                        <div class="flex items-center justify-between">
+                    <div class="mt-5 pt-4 sm:mt-6 sm:pt-5 border-t border-gray-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                             <div>
-                                <p class="font-semibold">Read more reviews on:</p>
-                                <div class="flex items-center mt-2">
-                                    <svg class="h-6 w-6 text-blue-600 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                <p class="font-semibold text-sm sm:text-base mb-2 sm:mb-0">Read more reviews on:</p>
+                                <div class="flex items-center mt-1 sm:mt-2">
+                                    <svg class="h-5 w-5 sm:h-6 sm:w-6 text-blue-600 mr-2" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1.086-10.432l4.48-2.577-4.48-2.577v5.154z" />
                                     </svg>
-                                    <span>Google Reviews</span>
+                                    <span class="text-sm sm:text-base">Google Reviews</span>
                                 </div>
                             </div>
-                            <div class="flex items-center">
+                            <div class="flex items-center mt-3 sm:mt-0">
                                 <span class="mr-2 font-bold text-lg">4.9</span>
                                 <div class="flex text-yellow-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -444,61 +536,61 @@
     </section>
 
     <!-- Educational Content / FAQs Section -->
-    <section id="faq" class="py-16" aria-labelledby="faq-heading">
-        <div class="container mx-auto px-4">
-            <h2 id="faq-heading" class="text-3xl font-bold text-center mb-12">Common Questions & Dental Education</h2>
+    <section id="faq" class="py-12 sm:py-16 md:py-20" aria-labelledby="faq-heading">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="faq-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 sm:mb-12 text-blue-600 font-heading">Common Questions & Dental Education</h2>
             
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
                 <!-- FAQs -->
                 <div>
-                    <h3 class="text-xl font-semibold mb-6">Frequently Asked Questions</h3>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-6 text-blue-800 font-heading">Frequently Asked Questions</h3>
                     
-                    <div class="space-y-4">
+                    <div class="space-y-5">
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
-                            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                                <span class="font-medium text-left">What insurance plans do you accept?</span>
+                            <button class="faq-toggle w-full flex justify-between items-center p-4 sm:p-5 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                                <span class="font-medium text-left text-sm sm:text-base">What insurance plans do you accept?</span>
                                 <svg class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            <div class="faq-content hidden px-4 pb-4 bg-white">
-                                <p>We accept most major insurance plans including Delta Dental, Cigna, Aetna, BlueCross BlueShield, and many others. Our office staff will verify your benefits before your appointment and help maximize your coverage. We also offer payment plans for those without insurance.</p>
+                            <div class="faq-content hidden px-4 sm:px-5 pb-4 sm:pb-5 bg-white">
+                                <p class="text-sm sm:text-base text-gray-700">We accept most major insurance plans including Delta Dental, Cigna, Aetna, BlueCross BlueShield, and many others. Our office staff will verify your benefits before your appointment and help maximize your coverage. We also offer payment plans for those without insurance.</p>
                             </div>
                         </div>
                         
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
-                            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                                <span class="font-medium text-left">How should I prepare for my dental appointment?</span>
+                            <button class="faq-toggle w-full flex justify-between items-center p-4 sm:p-5 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                                <span class="font-medium text-left text-sm sm:text-base">How should I prepare for my dental appointment?</span>
                                 <svg class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            <div class="faq-content hidden px-4 pb-4 bg-white">
-                                <p>Arrive 15 minutes early to complete any paperwork. Bring your ID, insurance card, and a list of current medications. Brush and floss before your appointment, but avoid heavy meals. If you're anxious, let us know in advance so we can ensure your comfort.</p>
+                            <div class="faq-content hidden px-4 sm:px-5 pb-4 sm:pb-5 bg-white">
+                                <p class="text-sm sm:text-base text-gray-700">Arrive 15 minutes early to complete any paperwork. Bring your ID, insurance card, and a list of current medications. Brush and floss before your appointment, but avoid heavy meals. If you're anxious, let us know in advance so we can ensure your comfort.</p>
                             </div>
                         </div>
                         
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
-                            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                                <span class="font-medium text-left">How often should I visit the dentist?</span>
+                            <button class="faq-toggle w-full flex justify-between items-center p-4 sm:p-5 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                                <span class="font-medium text-left text-sm sm:text-base">How often should I visit the dentist?</span>
                                 <svg class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            <div class="faq-content hidden px-4 pb-4 bg-white">
-                                <p>Most patients benefit from checkups and cleanings every six months. However, some conditions may require more frequent visits. During your examination, we'll recommend a personalized schedule based on your oral health needs.</p>
+                            <div class="faq-content hidden px-4 sm:px-5 pb-4 sm:pb-5 bg-white">
+                                <p class="text-sm sm:text-base text-gray-700">Most patients benefit from checkups and cleanings every six months. However, some conditions may require more frequent visits. During your examination, we'll recommend a personalized schedule based on your oral health needs.</p>
                             </div>
                         </div>
                         
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
-                            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                                <span class="font-medium text-left">What should I do in a dental emergency?</span>
+                            <button class="faq-toggle w-full flex justify-between items-center p-4 sm:p-5 bg-white hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                                <span class="font-medium text-left text-sm sm:text-base">What should I do in a dental emergency?</span>
                                 <svg class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            <div class="faq-content hidden px-4 pb-4 bg-white">
-                                <p>Call our office immediately at (123) 456-7890. For a knocked-out tooth, keep it moist (milk or saliva) and see us within 30 minutes. For a cracked tooth, rinse with warm water and apply a cold compress. For toothaches, take OTC pain relievers and call us for a same-day appointment.</p>
+                            <div class="faq-content hidden px-4 sm:px-5 pb-4 sm:pb-5 bg-white">
+                                <p class="text-sm sm:text-base text-gray-700">Call our office immediately at (123) 456-7890. For a knocked-out tooth, keep it moist (milk or saliva) and see us within 30 minutes. For a cracked tooth, rinse with warm water and apply a cold compress. For toothaches, take OTC pain relievers and call us for a same-day appointment.</p>
                             </div>
                         </div>
                     </div>
@@ -506,16 +598,16 @@
                 
                 <!-- Educational Content -->
                 <div>
-                    <h3 class="text-xl font-semibold mb-6">Dental Health Tips & Articles</h3>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-6 text-blue-800 font-heading">Dental Health Tips & Articles</h3>
                     
                     <div class="space-y-6">
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <div class="p-5">
-                                <h4 class="font-semibold text-lg mb-2">Proper Brushing Technique: Are You Doing It Right?</h4>
-                                <p class="text-gray-600 mb-3">Many people brush incorrectly, which can lead to plaque buildup and gum problems. Learn the proper technique to maintain optimal oral health.</p>
+                                <h4 class="font-semibold text-base sm:text-lg mb-2">Proper Brushing Technique: Are You Doing It Right?</h4>
+                                <p class="text-gray-700 mb-4 text-sm sm:text-base">Many people brush incorrectly, which can lead to plaque buildup and gum problems. Learn the proper technique to maintain optimal oral health.</p>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500">5 min read</span>
-                                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                                    <span class="text-xs sm:text-sm text-gray-500">5 min read</span>
+                                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center text-sm sm:text-base">
                                         Read Article
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -527,11 +619,11 @@
                         
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <div class="p-5">
-                                <h4 class="font-semibold text-lg mb-2">What to Expect During Root Canal Treatment</h4>
-                                <p class="text-gray-600 mb-3">Root canals have a reputation for being painful, but modern techniques have made them virtually painless. Learn what to expect during this common procedure.</p>
+                                <h4 class="font-semibold text-base sm:text-lg mb-2">What to Expect During Root Canal Treatment</h4>
+                                <p class="text-gray-700 mb-4 text-sm sm:text-base">Root canals have a reputation for being painful, but modern techniques have made them virtually painless. Learn what to expect during this common procedure.</p>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500">7 min read</span>
-                                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                                    <span class="text-xs sm:text-sm text-gray-500">7 min read</span>
+                                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center text-sm sm:text-base">
                                         Read Article
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -544,15 +636,15 @@
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <div class="p-5">
                                 <div class="flex items-center mb-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-600 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                                     </svg>
-                                    <h4 class="font-semibold text-lg">Understanding Teeth Whitening Options</h4>
+                                    <h4 class="font-semibold text-base sm:text-lg">Understanding Teeth Whitening Options</h4>
                                 </div>
-                                <p class="text-gray-600 mb-3">Dr. Davis explains the different teeth whitening options available, from in-office treatments to at-home kits, and helps you determine which is best for your smile.</p>
+                                <p class="text-gray-700 mb-4 text-sm sm:text-base">Dr. Davis explains the different teeth whitening options available, from in-office treatments to at-home kits, and helps you determine which is best for your smile.</p>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500">4:25 video</span>
-                                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                                    <span class="text-xs sm:text-sm text-gray-500">4:25 video</span>
+                                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center text-sm sm:text-base">
                                         Watch Video
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -564,9 +656,9 @@
                     </div>
                     
                     <div class="mt-6 text-center">
-                        <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                        <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 text-sm sm:text-base">
                             View all dental health resources
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
                         </a>
@@ -576,160 +668,161 @@
         </div>
     </section>
 
-    <!-- Contact Information & Booking Section -->
-    <section id="contact" class="py-16 bg-blue-50" aria-labelledby="contact-heading">
-        <div class="container mx-auto px-4">
-            <h2 id="contact-heading" class="text-3xl font-bold text-center mb-12">Contact Us & Schedule Your Visit</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Online Booking Form -->
-                <div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Book Your Appointment</h3>
-                        <form id="booking-form" class="space-y-4">
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-12 sm:py-16 md:py-20 bg-blue-800 text-white" aria-labelledby="contact-heading">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="contact-heading" class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 font-heading">Schedule Your Visit</h2>
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+                <!-- Appointment Form -->
+                <div class="bg-white text-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Request an Appointment</h3>
+                    <p class="mb-4 sm:mb-5 text-sm sm:text-base">Fill out the form below, and we'll contact you to confirm your appointment.</p>
+                    
+                    <form class="space-y-4 sm:space-y-5">
+                        <div>
+                            <label for="service" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Service Needed</label>
+                            <select id="service" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-sm sm:text-base" required>
+                                <option value="" disabled selected>Select service</option>
+                                <option value="cleaning">Routine Cleaning & Check-up</option>
+                                <option value="cosmetic">Cosmetic Consultation</option>
+                                <option value="restorative">Restorative Treatment</option>
+                                <option value="emergency">Emergency Care</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 sm:gap-4">
                             <div>
-                                <label for="appointment-type" class="block text-gray-700 mb-2">Appointment Type</label>
-                                <select id="appointment-type" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" required>
-                                    <option value="" disabled selected>Select appointment type</option>
-                                    <option value="regular-checkup">Regular Checkup & Cleaning</option>
-                                    <option value="consultation">New Patient Consultation</option>
-                                    <option value="cosmetic">Cosmetic Dentistry Consultation</option>
-                                    <option value="emergency">Emergency Dental Care</option>
+                                <label for="preferred-date" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Preferred Date</label>
+                                <input type="date" id="preferred-date" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                            </div>
+                            <div>
+                                <label for="preferred-time" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Preferred Time</label>
+                                <select id="preferred-time" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-sm sm:text-base" required>
+                                    <option value="" disabled selected>Select time</option>
+                                    <option value="morning">Morning (9am - 12pm)</option>
+                                    <option value="afternoon">Afternoon (1pm - 5pm)</option>
+                                    <option value="evening">Evening (5pm - 7pm)</option>
                                 </select>
                             </div>
-                            
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label for="preferred-date" class="block text-gray-700 mb-2">Preferred Date</label>
-                                    <input type="date" id="preferred-date" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                </div>
-                                <div>
-                                    <label for="preferred-time" class="block text-gray-700 mb-2">Preferred Time</label>
-                                    <select id="preferred-time" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" required>
-                                        <option value="" disabled selected>Select time</option>
-                                        <option value="morning">Morning (9am - 12pm)</option>
-                                        <option value="afternoon">Afternoon (1pm - 5pm)</option>
-                                        <option value="evening">Evening (5pm - 7pm)</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <label for="name" class="block text-gray-700 mb-2">Full Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                            </div>
-                            
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
-                                    <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <label for="notes" class="block text-gray-700 mb-2">Additional Notes <span class="text-gray-500 text-sm">(Optional)</span></label>
-                                <textarea id="notes" rows="3" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 w-full font-medium">Schedule Appointment</button>
-                        </form>
-                        
-                        <div class="mt-6 text-center">
-                            <p class="text-gray-600 mb-2">Prefer to schedule by phone?</p>
-                            <a href="tel:+11234567890" class="inline-flex items-center justify-center text-blue-600 font-medium hover:text-blue-800">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                Call (123) 456-7890
-                            </a>
                         </div>
+                        
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Full Name</label>
+                            <input type="text" id="name" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Email Address</label>
+                                <input type="email" id="email" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="notes" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Additional Notes <span class="text-gray-500 text-xs sm:text-sm">(Optional)</span></label>
+                            <textarea id="notes" rows="3" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-600 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-800 transition duration-300 w-full font-medium text-sm sm:text-base">Schedule Appointment</button>
+                    </form>
+                    
+                    <div class="mt-5 sm:mt-6 text-center">
+                        <p class="text-gray-600 mb-2 text-sm sm:text-base">Prefer to schedule by phone?</p>
+                        <a href="tel:+11234567890" class="inline-flex items-center justify-center text-blue-600 font-medium hover:text-blue-800 text-sm sm:text-base">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Call (123) 456-7890
+                        </a>
                     </div>
                 </div>
                 
                 <!-- Contact & Location Information -->
-                <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Office Information</h3>
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-gray-800">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Office Information</h3>
                         <div class="space-y-4">
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                                 <div>
-                                    <h4 class="font-medium">Address</h4>
-                                    <p>123 Dental Street, Suite 101<br>Cityville, State 12345</p>
-                                    <a href="https://maps.google.com" target="_blank" class="text-blue-600 text-sm hover:text-blue-800 inline-flex items-center mt-1">
+                                    <h4 class="font-medium text-sm sm:text-base">Address</h4>
+                                    <p class="text-sm sm:text-base">123 Dental Street, Suite 101<br>Cityville, State 12345</p>
+                                    <a href="https://maps.google.com" target="_blank" class="text-blue-600 text-xs sm:text-sm hover:text-blue-900 inline-flex items-center mt-1">
                                         Get Directions
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                         </svg>
                                     </a>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 <div>
-                                    <h4 class="font-medium">Phone</h4>
-                                    <p><a href="tel:+11234567890" class="hover:text-blue-600">(123) 456-7890</a></p>
+                                    <h4 class="font-medium text-sm sm:text-base">Phone</h4>
+                                    <p class="text-sm sm:text-base"><a href="tel:+11234567890" class="hover:text-blue-600">(123) 456-7890</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                                 <div>
-                                    <h4 class="font-medium">Email</h4>
-                                    <p><a href="mailto:info@dentalclinic.com" class="hover:text-blue-600">info@dentalclinic.com</a></p>
+                                    <h4 class="font-medium text-sm sm:text-base">Email</h4>
+                                    <p class="text-sm sm:text-base"><a href="mailto:info@dentalclinic.com" class="hover:text-blue-600">info@dentalclinic.com</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-blue-800 mr-2 sm:mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 <div>
-                                    <h4 class="font-medium">Hours</h4>
-                                    <p>Monday - Friday: 9am - 7pm<br>Saturday: 9am - 2pm<br>Sunday: Closed</p>
+                                    <h4 class="font-medium text-sm sm:text-base">Hours</h4>
+                                    <p class="text-sm sm:text-base">Monday - Friday: 9am - 7pm<br>Saturday: 9am - 2pm<br>Sunday: Closed</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Google Map -->
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Find Us</h3>
+                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-gray-800">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Find Us</h3>
                         <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden bg-gray-200">
                             <!-- Map placeholder - In a real implementation, this would be a Google Maps embed -->
                             <div class="w-full h-full flex items-center justify-center">
                                 <div class="text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 sm:h-16 sm:w-16 mx-auto text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                                     </svg>
-                                    <p class="text-gray-500">Interactive Map</p>
-                                    <p class="text-sm text-gray-400">(Google Maps would be embedded here)</p>
+                                    <p class="text-gray-500 text-sm sm:text-base">Interactive Map</p>
+                                    <p class="text-xs sm:text-sm text-gray-400">(Google Maps would be embedded here)</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Request Callback -->
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Request a Callback</h3>
-                        <form class="space-y-4">
+                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-gray-800">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Request a Callback</h3>
+                        <form class="space-y-3 sm:space-y-4">
                             <div>
-                                <label for="callback-name" class="block text-gray-700 mb-2">Name</label>
-                                <input type="text" id="callback-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <label for="callback-name" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Name</label>
+                                <input type="text" id="callback-name" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
                             </div>
                             <div>
-                                <label for="callback-phone" class="block text-gray-700 mb-2">Phone Number</label>
-                                <input type="tel" id="callback-phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <label for="callback-phone" class="block text-gray-700 mb-1 sm:mb-2 text-sm sm:text-base">Phone Number</label>
+                                <input type="tel" id="callback-phone" class="w-full px-3 sm:px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" required>
                             </div>
-                            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 w-full">Request Callback</button>
+                            <button type="submit" class="bg-blue-600 text-white px-4 py-2 sm:py-2.5 rounded-lg hover:bg-blue-800 transition duration-300 w-full text-sm sm:text-base">Request Callback</button>
                         </form>
                     </div>
                 </div>
@@ -738,7 +831,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-800 text-white py-8" role="contentinfo">
+    <footer class="bg-blue-700 text-white py-8" role="contentinfo">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <!-- Column 1: About -->
@@ -809,7 +902,7 @@
                     <p class="mb-4">Subscribe to our newsletter for dental health tips and special offers.</p>
                     <form class="flex mb-6">
                         <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md w-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                        <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700 transition duration-300 whitespace-nowrap">Subscribe</button>
+                        <button type="submit" class="bg-blue-900 px-4 py-2 rounded-r-md hover:bg-blue-800 transition duration-300 whitespace-nowrap">Subscribe</button>
                     </form>
                     
                     <div>
@@ -830,7 +923,7 @@
                 </div>
             </div>
             
-            <hr class="my-6 border-blue-700">
+            <hr class="my-6 border-blue-600">
             
             <div class="flex flex-col md:flex-row md:justify-between md:items-center">
                 <p class="mb-4 md:mb-0">© 2025 Dental Clinic. All rights reserved.</p>

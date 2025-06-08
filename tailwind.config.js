@@ -14,14 +14,17 @@ module.exports = {
           300: '#7dd3fc',
           400: '#38bdf8',
           500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          600: '#003459', // Prussian blue
+          700: '#00171F', // Rich black
+          800: '#007EA7', // Cerulean
+          900: '#00A8E8', // Picton Blue
         },
+        white: '#FFFFFF',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Inter', 'system-ui', 'sans-serif'],
+        body: ['Merriweather', 'Georgia', 'serif'],
+        sans: ['Merriweather', 'Georgia', 'serif'],
       },
       spacing: {
         '72': '18rem',
@@ -32,7 +35,7 @@ module.exports = {
         '8xl': '90rem',
       },
       boxShadow: {
-        'outline-blue': '0 0 0 3px rgba(2, 132, 199, 0.45)',
+        'outline-blue': '0 0 0 3px rgba(0, 52, 89, 0.45)',
       },
     },
   },
